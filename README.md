@@ -126,5 +126,24 @@ python web_portal.py
 - If you want to use camera and controller for a different robot make sure you change the name of topics in [config.py](<config.py>)
 - To share Web-portal with many users across network, Checkout [Gradio-Mcp-Server](https://www.gradio.app/guides/building-mcp-server-with-gradio)
 
+## 3. Acknowledgement
+
+MCP Control is based on [ros-mcp-server](https://github.com/lpigeon/ros-mcp-server) (Note: my implementation has deviated quite a bit now)
+
+LLM description inspiration from [vlm-describer](https://h-naderi.github.io/projects/5-scene-descriptor)
+
+## 7. Citation
+```
+@MISC{Suleman2025,
+  author = "Muhammad Suleman",
+  title = "Ros2-MCP-Web-Portal",
+  year = "2025",
+  url = "https://github.com/sallu-786/Ros2-MCP-Web-Portal",
+  note = "Version 1.0.0"
+}
+```
+## 8. Contact
+sulemanmuhammad08@gmail.com
+
 
 
