@@ -10,7 +10,6 @@ The ROS MCP Server with Web Portal is designed to support robots in performing c
 
 ## Supported Environment
 
-- 
 - Quadruped Simulation (successful testing on Isaac-sim+IsaacLab)
 - Real Quadruped (under development)
 - Humanoid Simulation + Real (In future)
