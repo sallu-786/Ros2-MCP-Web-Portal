@@ -102,9 +102,9 @@ Before running, make sure ```num_envs``` in [sim.yaml](<../cfg/sim.yaml>) has sa
 
 
 ## 6. Launch Web Portal 
-To run web portal ol prerequisite is step 3 (launch robsridge server). Other steps can be ignored
+To run web portal only prerequisite is step 3 (launch robsridge server). Other steps can be ignored
 ### 6.1 Activate the evironment 
-First of all activate the same environment being used for running ```main.py``` program (isaaclab_env) as per [README.MD](<https://github.com/sallu-786/Go2_Isaac_ros2/blob/main/README.md>) 
+Assuming that you are running it with Isaac-simulation(support for real robot will be added later), First of all activate the same environment being used for running ```main.py``` program (isaaclab_env) as per [README.MD](<https://github.com/sallu-786/Go2_Isaac_ros2/blob/main/README.md>) 
 
 
 **Note:** If you want to create a new seperate environment for web portal then you need to install torch and numpy as well otherwise make sure you dont update/change them in existing environment or it will cause problems. 
