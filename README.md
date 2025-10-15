@@ -36,7 +36,7 @@ uv venv
 source .venv/bin/activate
 ```
 
-### 2. MCP Server Configuration
+### MCP Server Configuration
 
 
 #### Option A. Install Cursor 
@@ -55,7 +55,7 @@ Run claude desktop and go to ```developer``` settings and click ```Add MCP Serve
 ![claude](<img/mcp_server.png>)
 
 
-### 2.1 MCP Config File
+### MCP Config File
 Paste the code in mcp.json file
 ```bash
 {
@@ -74,15 +74,15 @@ Paste the code in mcp.json file
 ```
 
 
-## 2.2 MCP Functions
+## 1.1 MCP Functions
 
 You can find the list of functions in the [MCPFUNCTIONS.md](MCPFUNCTIONS.md).
 
-## 3. Launch Rosbridge Server
+## 1.2 Launch Rosbridge Server
 ### 1. Set IP and Port to connect rosbridge.
 - Open `server.py` and change your `LOCAL_IP`, `ROSBRIDGE_IP` and `ROSBRIDGE_PORT`. (`ROSBRIDGE_PORT`'s default value is `9090`)
 
-### 2. Run rosbridge server.
+### Run rosbridge server.
 ROS 1
 ```bash
 roslaunch rosbridge_server rosbridge_websocket.launch   
@@ -94,18 +94,18 @@ ros2 launch rosbridge_server rosbridge_websocket_launch.xml   #if you dont have 
 
 ![rosbridge server launch](<img/rosbridge.png>)
 
-### 4. Run ```main.py``` as per [README.MD](<https://github.com/sallu-786/Go2_Isaac_ros2/blob/main/README.md>) 
+### Run ```main.py``` as per [README.MD](<https://github.com/sallu-786/Go2_Isaac_ros2/blob/main/README.md>) 
 Before running, make sure ```num_envs``` in [sim.yaml](<../cfg/sim.yaml>) has same value as ```NUM_ENVS``` in [server.py](<server.py>)
 
 
-### 5. Type your instructions in chat
+### Type your instructions in chat
 
 ![How to use](<img/run_command.png>)
 
 
-## 6. Launch Web Portal 
+## 2 Launch Web Portal 
 To run web portal only prerequisite is step 3 (launch robsridge server). Other steps can be ignored
-### 6.1 Activate the evironment 
+### 2.1 Activate the evironment 
 Assuming that you are running it with Isaac-simulation(support for real robot will be added later), First of all activate the same environment being used for running ```main.py``` program (isaaclab_env) as per [README.MD](<https://github.com/sallu-786/Go2_Isaac_ros2/blob/main/README.md>) 
 
 
@@ -118,7 +118,7 @@ python web_portal.py
 ```
 ![Web_Portal](<img/portal.png>)
 
-### 6.1 Changing Portal Settings 
+### 2.2 Changing Portal Settings 
 - You can choose which services to run in portal by setting parameters to True/False in [config.py](<config.py>)
 - Button location might be different depending on screen size. You can adjust it in [web_portal.py](<web_portal.py>) from line 90 onwards
 - To run the LLM description dont forget to add your API key in [config.py](<config.py>) or use [Ollama](https://ollama.com/download) for local hosting. To change prompt go to [llm_describer.py](<web_utils/llm_describer.py>)
