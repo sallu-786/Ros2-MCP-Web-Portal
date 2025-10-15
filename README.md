@@ -8,15 +8,17 @@
 
 The ROS MCP Server with Web Portal is designed to support robots in performing complex tasks and adapting effectively to various environments by providing a set of functions that transform natural language commands, entered by a user through an LLM, into ROS commands for robot control. Furthermore, by utilizing ``rosbridge``, it is configured to operate with both ``ROS`` and ``ROS2`` systems, and its WebSocket-based communication enables broad applicability across diverse platforms. not only that using this MCP Server I have created a web portal that makes it super easy to go through hundreds of topics and services without typing a single command and visualzie it for easy intuition, see live camera stream wth description from LLM and ability to control robots with Web-UI.
 
-## Supported Types
+## Supported Environment
 
-- geometry_msgs/Twist
-- sensor_msgs/Image
-- sensor_msgs/JointState
+- 
+- Quadruped Simulation (successful testing on Isaac-sim+IsaacLab)
+- Real Quadruped (under development)
+- Humanoid Simulation + Real (In future)
 
 
 
-## 1. Installation
+
+## 1. MCP-Server Installation
 
 ### `uv` Installation
 - To install `uv`, you can use the following command:
@@ -83,11 +85,11 @@ You can find the list of functions in the [MCPFUNCTIONS.md](MCPFUNCTIONS.md).
 ### 2. Run rosbridge server.
 ROS 1
 ```bash
-roslaunch rosbridge_server rosbridge_websocket.launch
+roslaunch rosbridge_server rosbridge_websocket.launch   
 ```
 ROS 2
 ```bash
-ros2 launch rosbridge_server rosbridge_websocket_launch.xml
+ros2 launch rosbridge_server rosbridge_websocket_launch.xml   #if you dont have it install it with sudo apt command in linux
 ```
 
 ![rosbridge server launch](<img/rosbridge.png>)
