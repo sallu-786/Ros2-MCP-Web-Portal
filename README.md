@@ -1,7 +1,9 @@
 ## Overview
-![Static Badge](https://img.shields.io/badge/ROS-Available-green)
-![Static Badge](https://img.shields.io/badge/ROS2-Available-green)
+![Static Badge](https://img.shields.io/badge/Isaac_Sim-4.5.0-orange)
+![Static Badge](https://img.shields.io/badge/IsaacLab-2.1.1-yellow)
+![Static Badge](https://img.shields.io/badge/ROS2-Humble-green)
 ![Static Badge](https://img.shields.io/badge/License-MIT-blue)
+
 
 ![flow diagram](<img/framework.png>)
 
